@@ -24,6 +24,14 @@ public class Exercice2 {
                 listString.add(list[1]);
                  
             }
+            /*double sum = 0;
+
+            for(int i = 0; i < listString.size(); i++){
+                sum = sum + listString.get(i);
+            }
+            double avg = sum / listString.size();
+
+            System.out.println(avg);*/
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -33,6 +41,6 @@ public class Exercice2 {
 
 
 
-        //System.out.println("time to say goodbye");
+
     }
 }
