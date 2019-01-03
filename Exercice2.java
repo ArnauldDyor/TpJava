@@ -14,24 +14,24 @@ public class Exercice2 {
         String line = null;
         try {
             reader = new BufferedReader(new FileReader("/home/arnauld/IdeaProjects/TpJava/src/tpjava/file.txt"));
-            line =  reader.readLine();
+            //line =  reader.readLine();
 
            ArrayList <String> listString = new ArrayList();
             /*list.add(line.split(":"));*/
 
-            while(line != null){
+            while((line = reader.readLine())!= null){
                 String[] list = line.split(":");
                 listString.add(list[1]);
                  
             }
-            /*double sum = 0;
+            double sum = 0;
 
             for(int i = 0; i < listString.size(); i++){
-                sum = sum + listString.get(i);
+                sum = sum + Double.valueOf(listString.get(i));
             }
             double avg = sum / listString.size();
 
-            System.out.println(avg);*/
+            System.out.println(avg);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
